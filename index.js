@@ -37,7 +37,7 @@ function xhr(o) {
 
             for(var slug in slugs) {
                 if (slugs.hasOwnProperty(slug)) {
-                    var url = slugs[slug].indexOf('https') == 0? slugs[slug] : 'http://link-short.github.io/links/' + slugs[slug];
+                    var url = slugs[slug].indexOf('https') == 0? slugs[slug] : 'http://link-short.github.io/' + slugs[slug];
                     html += tpl.replace('__link__', url).replace('__text__', slug);
                 }
             }
