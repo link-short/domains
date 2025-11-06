@@ -25,7 +25,7 @@ function xhr(o) {
 
 (function () {
     xhr({
-        src: 'free-domains.json',
+        src:'free-domains.json',
         onsuccess: function () {
             var slugs = JSON.parse(this.responseText);
             
