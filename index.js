@@ -42,7 +42,7 @@ function xhr(o) {
                 }
             }
 
-            document.getElementById('list').innerHTML = html;
+            document.getElementById('free').innerHTML = html;
         },
         onerror: function () {
             //document.body.className = 'error json';
